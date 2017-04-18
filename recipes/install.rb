@@ -1,7 +1,7 @@
 # install the mongodb_org_repo if necessary
 include_recipe 'sc-mongodb::mongodb_org_repo' if %w(10gen mongodb-org).include?(node['mongodb']['install_method'])
 
-build_essential 'build-tools'
+#build_essential 'build-tools'
 
 # prevent-install defaults, but don't overwrite
 file node['mongodb']['sysconfig_file'] do
